@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Six+Caps" rel="stylesheet">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="textik">International Space Station Live Tracker</div>
+    <a href="index"><div class="linking_pages">Back</div></a>
+    <div id="wrapping_container">
+    <div id="about_info">
+    <h1>About This Project</h1>
+
+    The idea of this project is extremely simple: to track the current location of the International Space Station (ISS). When you visit the main page, the project speaks for itself. You have a 3D globe with a very detailed map (you can literally see the individual houses of the smallest villages) on which you can see where the ISS is located at that moment. You can feel free to zoom and see the current country or even a city through which ISS is currently passing. <br>
+    <br>
+
+    I decided to do this project mainly for two reasons. The first reason was the fascination by stars and the outer space and how awesomely we can access it nowadays (even through small things like a webpage). <br><br>
+
+    One day L showed me an awesome NASA page which could predict the trajectory of the ISS, so you could easily observe from your location if ISS was passing through there that day. However, the page gave only the prediction of when it would pass through the certain location, and I was really wondering where the ISS could be right now. I therefore looked on the web if something like an easy tracker of ISS exists. I immediately found the Open Notify API which provides some NASA Data. It also provides a very useful data of the current coordinates of the ISS which refreshes every second. I therefore thought there would be plenty of projects displaying the current position of the ISS. I found many pages, but to my surprise, none of them provided a 3D with the displayed position. I saw this as an opportunity to try and create a nice, simple website which would be pretty straightforward about the mission of showing where ISS is flyling (or, as physicists would say, currently falling) right now, so everybody would understand what is going on without any difficult explanation.
+    <br><br>
+    Everything I needed to do to create this page was to work mainly on the connection between the live data from the International Space station and a 3D globe which would look nice. After some research I found a very interesting WebGL Earth API which provides a very simple and user friendly 3D programmable globes. There is a particular reason why I decided to go with this API. Among all the 3D globes I found, this was the only one which provided user with the actual coordinates with which you could operate directly on the globe. After finding WebGL API, the only challenge was connecting the real-time data to the globe. 
+    <br><br>
+    Now, WebGL provides a simple function for pinning any location on the map using the real earth coordinates. Great! This was the sdaving function which I really needed and which would make the whole tracking much easier than I imagined. The function worked great and it worked very very precisely, since the globe with the coordinates is very detailed. After the most important function of this project was solved, I proceeded with updating the map. jQuery provides the function "setInterval" which takes any function and runs it recursively with a given time interval. Everything seemed to be working fine except for one thing - all the markers that were pinned on the map remained there, which created a pretty ugly trajectory of the ISS.
+    <br><br>
+    Here comes the main challenge that I encountered with during this project - How to remove the marker? I was surprised how long it took me to find a solution to this problem. Removing the makrer was the longest part and I almost gave up on finding any possible solution. In the official documentation there was not a sigle mention of any function which would remove the marker. After a few hours of research I decided to take a nap. When I woke up I thought about going through the actual JavaScript library. It was a big mess and firstly it did not help me in any way. However, after I tried searching for some keywords related to word "marker", I found a function called "removeFrom()", which was completely undocumented. I tried the function and, to my big surprise, it worked. It was fantastic, because I would not be able to more it forward withouth this trivial function. Thankfully it worked and I went ahead and finished the positioning, styling and some graphics of the web. I later added the display of the current coordinates.
+    <br><br>
+    This was a very challenging project, since it was my first time working with 3D graphics. However, to me it was a great learning experience which required a lot of patience and understanding. When I first presented the project, I received a lot of feedback since the page was just a globe displaying the marker without any additional info. I hope that n the future I will be able to add more interesting and important features. Currently I am working on the speed calculation and diplaying the nearest city that the ISS is at. 
+    </div>
+    </div>
+
+  </body>
+</html>

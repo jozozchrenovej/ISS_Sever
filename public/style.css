@@ -1,0 +1,72 @@
+body{
+	padding: 0; 
+	margin: 0; 
+	background-color: black;
+	background: center top url("star-field.png");
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+#earth_div{
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	position: absolute !important;
+}
+
+#textik{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    position: absolute;
+    /* left: 50%; */
+    /* right: 35%; */
+    color: white;
+    font-family: 'Six Caps', sans-serif;
+    font-size: 3em;
+    
+}
+
+#ISS_info{
+	position: fixed;
+	bottom: 0;
+	right:0;
+	width: 300px;
+	color: white;
+	font-size: 1.5em;
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: left;
+}
+
+#wrapping_container{
+    color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1em;
+    position: absolute;
+    top: 8%;
+    text-align: left;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#about_info{
+	position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.linking_pages{
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: white;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.5em;
+	width: 4%;
+	margin: 10px 10px;
+}
