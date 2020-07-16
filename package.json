@@ -11,7 +11,7 @@
   "dependencies": {
     "ejs": "*",
     "express": "4.x",
-    "morgan": "~1.0.0",
+    "morgan": "~1.10.0",
     "request": "^2.47.0"
   }
 }
